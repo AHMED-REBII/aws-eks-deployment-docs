@@ -16,7 +16,6 @@ Before you start, ensure you have installed and configured:
 
 Configure AWS CLI with your credentials:
 
-<details>
 <summary>🔧 Configure AWS CLI</summary>
 
 ```bash
