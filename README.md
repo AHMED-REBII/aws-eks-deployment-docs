@@ -22,3 +22,9 @@ Configure AWS CLI with your credentials:
 ```bash
 aws configure
 
+## 🛠️ Deployment Steps
+
+### 1️⃣ Create an EKS Cluster (Fargate)
+
+```bash
+eksctl create cluster --name demo-cluster --region us-east-1 --fargate
