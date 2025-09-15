@@ -21,3 +21,20 @@ Configure AWS CLI with your credentials:
 
 ```bash
 aws configure
+🛠️ Setup Steps
+1️⃣ Create an EKS Cluster
+
+Command
+basheksctl create cluster --name demo-cluster --region us-east-1 --fargate
+
+2️⃣ Update kubeconfig
+
+Command
+bashaws eks update-kubeconfig --name demo-cluster --region us-east-1
+
+3️⃣ Deploy the 2048 Sample App
+
+Command
+bashkubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.5.4/docs/examples/2048/2048_full.yaml
+
+4️⃣ Enable IAM OIDC Provider
