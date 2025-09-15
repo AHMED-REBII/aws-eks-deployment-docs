@@ -90,3 +90,39 @@ kubectl get ingress -A
 ```bash
 eksctl delete cluster --name demo-cluster --region us-east-1
 ```
+
+## 📸 Demo Screenshots
+
+### 1️⃣ EKS Cluster Creation via eksctl
+A terminal screenshot showing the use of the `eksctl` command to create an EKS cluster named `demo-cluster` with Fargate profiles in `us-east-1`.
+
+![EKS Cluster Creation](images/1.png)
+
+---
+
+### 2️⃣ Amazon EKS Cluster Dashboard
+View of the Amazon EKS Clusters dashboard showing the active cluster `demo-cluster`.
+
+![Amazon EKS Cluster Dashboard](images/2.png)
+
+---
+
+### 3️⃣ EKS Cluster Details and Fargate Profiles
+Detailed view of the `demo-cluster` showing two active Fargate profiles for the `game-2048` and `default` namespaces.
+
+![EKS Cluster Details](images/3.png)
+
+---
+
+### 4️⃣ Kubernetes Pods and Ingress Status
+Terminal screenshot showing deployment of the 2048 game. `kubectl get pods` shows running pods and `kubectl get ingress` confirms ingress creation.
+
+![Kubernetes Pods and Ingress](images/4.png)
+
+---
+
+### 5️⃣ The 2048 Game Web Interface
+Screenshot of the 2048 game running in a browser via the AWS Load Balancer DNS.
+
+![2048 Game Web Interface](images/5.png)
+
